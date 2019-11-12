@@ -1,0 +1,297 @@
+@import "https://fonts.googleapis.com/css?family=DM+Serif+Display|Heebo|Indie+Flower|Merriweather|Mountains+of+Christmas|Noto+Serif|Slabo+27px|Work+Sans&display=swap";
+
+* {
+  box-sizing:border-box;
+}
+
+body,html {
+  height:100%;
+  margin:0;
+  padding:0;
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,.8)),url(../assets/3.jpeg);
+  background-size:cover;
+}
+
+header,section,footer {
+  overflow-x:hidden;
+}
+
+:root {
+  --dm:"DM Serif Display",cursive;
+  --heebo:Heebo,cursive;
+  --indie:"Indie Flower",cursive;
+  --merrie:Merriweather,cursive;
+  --mountains:"Mountains of Christmas",cursive;
+  --noto:"Noto Serif",cursive;
+  --lightblack:#2e2e2e;
+  --bggradient:linear-gradient(to bottom,#dd2476,#ff512ff);
+  --lightgray:rgba(255,255,255,0)
+}
+
+.el { /* Heading CSS */
+  padding:.25em;
+  text-align:center;
+  font-size:2em;
+  color:#f5f5f5;
+  font-family:var(--merrie);
+}
+
+option {
+  background-color:gray
+}
+
+input[type=text],input[type=number],select,textarea,input[type=password] {
+  width:100%;
+  padding:.5em;
+  border:1px solid #fff;
+  border-radius:.25em;
+  resize:vertical;
+  background:transparent;
+  color:#fff;
+}
+
+label {
+  padding:.75em .75em .75em 0;
+  display:inline-block;
+}
+
+.container {
+  border-radius:.3em;
+  background-color:transparent;
+  opacity:1;
+  padding:1em;
+  color:#fff;
+}
+
+.col-25 {
+  float:left;
+  width:25%;
+  margin-top:.4em;
+}
+
+.col-75 {
+  float:left;
+  width:75%;
+  margin-top:.4em;
+}
+
+.row:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25,.col-75 {
+    width:100%;
+margin-top:0;
+}
+}
+
+input[type=submit] {
+font-size:1em;
+font-weight:700;
+font-family:var(--noto);
+letter-spacing:.2em;
+border-radius:.5em;
+float:right;
+margin:.25em;
+padding:.25em;
+}
+
+table,th,td {
+border:1px solid #ffd700;
+text-align:center;
+font-size:1.2em;
+}
+
+
+th {
+color:#ffebcd;
+}
+
+table {
+width:100%;
+margin:.5em;
+}
+
+table .btnedit {
+color:#90ee90;
+cursor:pointer;
+}
+
+table .btndelete {
+color:red;
+cursor:pointer;
+}
+
+table .btnread {
+color:#ff0;
+cursor:pointer;
+}
+
+.login {  /*login form*/
+margin-right:auto;
+margin-left:auto;
+text-align:center;
+padding:1em;
+font-family:var(--mountains);
+}
+
+.logina {
+padding:.5em;
+background-color:#4CAF50;
+cursor:pointer;
+}
+
+#myinput {
+max-width:20%;
+margin:1em;
+font-size:1em;
+}
+
+.loginform {
+max-width:50%;
+margin-right:auto;
+margin-left:auto;
+margin-top:5%;
+}
+
+#uname,#psw {
+color:#f5f5f5;
+background-origin:padding-box;
+}
+
+@media screen and (max-width: 300px) {
+span.psw {
+display:block;
+float:none;
+}
+}
+
+button {
+margin:auto;
+display:inline-block;
+border-radius:.5em;
+}
+
+a {
+margin:auto;
+display:block;
+max-width:25%;
+width:auto;
+text-align:center;
+padding:1em;
+border-radius:.5em;
+}
+
+.center {
+text-align:center;
+}
+
+#pagination{
+  float: right;
+}
+
+::placeholder {
+color:#fff;
+}
+
+.modal {
+display:none;
+position:fixed;
+z-index:1;
+padding-top:100px;
+left:0;
+top:0;
+width:100%;
+height:100%;
+overflow:auto;
+background-color:#000;
+background-color:rgba(0,0,0,0.4);
+}
+
+.modal-content {
+background-color:dimgrey;
+margin:auto;
+padding:1.5em;
+border:1px solid #888;
+width:80%;
+color:#000;
+}
+
+.close {
+color:#aaa;
+float:right;
+font-size:3em;
+font-weight:700;
+}
+
+.close:hover,.close:focus {
+color:#000;
+text-decoration:none;
+cursor:pointer;
+}
+
+.modal-content h1 {
+text-align:center;
+}
+
+.modal-content p {
+color:#ffebcd;
+font-family:var(--dm);
+display:flex;
+}
+
+.disitem {
+font-size:1.25em;
+font-family:var(--dm);
+color:#fff;
+}
+
+table#bottom {
+  table-layout: fixed ;
+  width: 100% ;
+  border-collapse: collapse ;
+  border: none ;
+}
+
+table#bottom .trow {
+  width: 33.333% ;
+  border: none;
+  padding: 10px ;
+}
+
+table#bottom th {
+  width: 33.333% ;
+  border: none;
+  padding: 10px ;
+}
+ 
+#pageno {
+  max-width:30%;
+  float: left;
+  margin:1em;
+}
+
+#gobutton{
+  width: 50%;
+  float: right;
+}
+
+#go{
+  margin-right: 1em;
+  max-width: 35%;
+  float: right;
+}
+
+#gobutton{
+  float: left;
+  padding: 0.25em;
+  max-width: 15%; 
+}
+
+.fa-search{
+  color: white;
+  margin-left: 1em;
+}

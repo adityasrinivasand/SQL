@@ -1,0 +1,434 @@
+@import "https://fonts.googleapis.com/css?family=DM+Serif+Display|Heebo|Indie+Flower|Merriweather|Mountains+of+Christmas|Noto+Serif|Slabo+27px|Work+Sans&display=swap";
+
+* {
+box-sizing:border-box;
+}
+
+body,html {
+height:100%;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth; 
+}
+
+header,section,footer {
+overflow-x:hidden;
+}
+
+:root {
+--dm:"DM Serif Display",cursive;
+--heebo:Heebo,cursive;
+--indie:"Indie Flower",cursive;
+--merrie:Merriweather,cursive;
+--mountains:"Mountains of Christmas",cursive;
+--noto:"Noto Serif",cursive;
+--lightblack:#2e2e2e;
+--bggradient:linear-gradient(to bottom,#dd2476,#ff512ff);
+--lightgray:rgba(255,255,255,0)
+}
+
+header a {
+  font-family: 'Roboto Slab', serif;
+font-size:.9em;
+color:#f5f5f5
+}
+
+img {
+width:100%;
+height:auto
+}
+
+header a {
+  font-family: 'Roboto', sans-serif;
+font-size:1em;
+color:#f5f5f5
+}
+
+.navbar /* Style the navigation menu */ {
+width:100%;
+background-color:#555;
+overflow:auto;
+}
+
+.navbar a /* Navigation links */ {
+float:left;
+padding:.75em;
+color:#fff;
+text-decoration:none;
+font-size:1em;
+width:16.666667%;
+text-align:center;
+display: block;
+}
+
+.navbar a:hover /* Add a background color on mouse-over */ {
+background-color:#000
+}
+
+.navbar a.active /* Style the current/active link */ {
+background-color: red;
+}
+
+@media screen and (max-width: 500px) {
+.navbar a {
+float:none;
+display:block;
+width:100%;
+text-align:left;
+}
+}
+
+header .container h1 {
+padding:0;
+font-size:2.5em;
+margin-bottom:5em;
+color:#faebd7;
+font-family: 'Roboto Slab', serif;
+text-align:center;
+}
+
+header .container p {
+font-size:1.5em;
+font-family: 'Roboto', sans-serif;
+color:#f5f5f5;
+text-justify:auto;
+text-align:center;
+position:relative;
+font-size:2.5em
+}
+
+.container {
+position:relative;
+max-width:100%;
+margin:0 auto
+}
+
+.container .content {
+position:absolute;
+bottom:0;
+background:#000;
+background:rgba(0,0,0,0.5);
+color:#f1f1f1;
+width:100%;
+padding:1.5em
+}
+
+.responsive {
+max-width:100%;
+width:100%;
+height:auto
+}
+
+.center {
+display:block;
+margin-left:auto;
+margin-right:auto;
+width:50%
+}
+
+.column {
+float:left;
+width:33.33%;
+padding:5px
+}
+
+.row::after /* Clear floats after image containers */ {
+content:"";
+clear:both;
+display:table
+}
+
+.section-1 {
+padding:.5em;
+background:#f5deb3
+}
+
+.section-1 .row .about img {
+height:auto;
+width:40%;
+padding:2em;
+float:left;
+max-width:50%;
+border-radius:75%
+}
+
+.section-1 .row .about h1 {
+padding:.5em;
+font-size:2.5em;
+font-weight:700;
+text-align:center;
+font-family: 'Roboto Slab', serif;
+}
+
+.section-1 .row .about-text {
+padding:0.5em;
+margin-top:1.5em;
+font-size:1.25em;
+color:#a52a2a;
+position:relative;
+text-justify:auto;
+text-align:left;
+font-family: 'Roboto Slab', serif;
+}
+
+.section-2 {
+padding:.5em;
+background-color:#add8e6
+}
+
+.row {
+display:flex;
+flex-wrap:wrap;
+padding:0 .25em;
+}
+
+.columnaca {
+flex:25%;
+max-width:50%;
+padding:0 .25em
+}
+
+.columnaca img {
+margin-top:.5em;
+vertical-align:middle;
+width:100%;
+padding: 0.5em; 
+margin-left: auto;
+margin-right: auto;
+}
+
+@media screen and (max-width: 800px) {
+.columnaca {
+flex:50%;
+max-width:50%
+}
+}
+
+@media screen and (max-width: 600px) {
+.columnaca {
+flex:100%;
+max-width:100%
+}
+}
+
+.section-2 .academics h1 {
+padding:.5em;
+font-size:2.5em;
+font-weight:bold;
+text-align:center;
+font-family: 'Roboto Slab', serif;
+}
+
+table, th, td {
+  border: 0.1em solid black;
+  border-collapse: collapse;
+}
+
+td{
+  text-align: left;
+  font-size: 1em;
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+
+th{
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Roboto Slab', serif;
+  color: #a52a2a;
+}
+
+.section-3 {
+padding:.5em;
+background:#f5deb3
+}
+
+.section-3 .prof h1 {
+padding:.5em;
+font-size:2.5em;
+font-weight:700;
+text-align:center;
+font-family: 'Roboto Slab', serif;
+}
+
+.section-3 .proftext {
+padding:1em;
+margin-top:1.5em;
+font-size:1.25em;
+color:#4CAF50;
+position:relative;
+text-justify:auto;
+text-align:center;
+font-family: 'Roboto Slab', serif;
+}
+
+.columnprof {
+flex:50%;
+max-width:50%;
+padding:0 .25em
+}
+
+.columnprof img {
+margin-top:.5em;
+vertical-align:center;
+margin-left:7em;
+margin-right:7em;
+width:50%
+}
+
+@media screen and (max-width: 800px) {
+.columnprof {
+flex:50%;
+max-width:50%
+}
+}
+
+@media screen and (max-width: 600px) {
+.columnprof {
+flex:100%;
+max-width:100%
+}
+}
+
+.section-4 {
+padding:.5em;
+background-color:silver
+}
+
+.section-4 .extra h1 {
+padding:.5em;
+font-size:2.5em;
+font-weight:700;
+text-align:center;
+font-family: 'Roboto Slab', serif;
+}
+
+.section-4 .extratext {
+padding:2em;
+font-family: 'Roboto Slab', serif;
+margin-top:1.2em;
+font-size:1.25em;
+color:#2e8b57;
+position:relative;
+text-justify:auto;
+text-align:center
+}
+
+.section-4 img {
+border-radius:50%
+}
+
+.columnextra {
+flex:25%;
+max-width:25%;
+padding:0 .25em
+}
+
+.columnextra img {
+margin-top:.5em;
+vertical-align:middle;
+width:75%
+}
+
+@media screen and (max-width: 800px) {
+.columnextra {
+flex:50%;
+max-width:50%
+}
+}
+
+@media screen and (max-width: 600px) {
+.columnextra {
+flex:100%;
+max-width:100%
+}
+}
+
+.section-5 {
+padding:3em;
+background:#f5deb3
+}
+
+.section-5 h1 {
+padding:.5em;
+font-size:2.5em;
+font-weight:700;
+text-align:center;
+font-family: 'Roboto Slab', serif;
+}
+
+#slideshow img{
+  width: 25em; 
+  height: 26em;
+}
+
+#slideshow {
+margin:5em auto;
+position:relative;
+width:25em;
+height:27.08em;
+padding:0.625em;
+box-shadow:0 0 1.25em rgba(0,0,0,0.4)
+}
+
+#slideshow > div {
+position:absolute;
+top:0.625em;
+left:0.625em;
+right:0.625em;
+bottom:0.625em;
+}
+
+footer {
+background-color:rgba(0,0,0,0.75);
+padding:.2em
+}
+
+footer h1{
+  font-size:2.5em;
+  line-height: 0.625em;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+}
+
+footer h4{
+  font-size: 1em;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  color: wheat;
+}
+
+
+form{
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+
+.form-control{
+  width: 25em;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color:#fff;
+  font-size:1.2em;
+  margin-bottom: 1em;
+}
+
+form .submit{
+  background: #ff5722;
+  font-size: 1.2em;
+  font-weight: bold;
+  height:2.5em;
+  letter-spacing: 0.2em;
+  border-radius: 0.5em;
+}
+
+form .submit:hover{
+  background-color:#f44336;
+  cursor: pointer;
+}
+
+

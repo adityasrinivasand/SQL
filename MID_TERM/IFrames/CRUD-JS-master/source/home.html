@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset=UTF-8>
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
+  <title>CRUD with JS</title>
+  <link rel=stylesheet href=../css/style.css> <link href=https://use.fontawesome.com/releases/v5.8.1/css/all.css rel=stylesheet>
+</head>
+
+<body onload=exist()>
+  <section class=center>
+    <h1 class=el><i class="fas fa-plug"></i>Electronic Store</h1>
+    <div class=container>
+      <form autocomplete=off class=form1 name=productform>
+        <div class=row>
+          <div class=col-25>
+            <label for=pname>Product Name</label>
+          </div>
+          <div class=col-75>
+            <input type=text id=pname name=pname placeholder="Product Name" required>
+          </div>
+        </div>
+
+        <div class=row>
+          <div class=col-25>
+            <label for=seller>Seller</label>
+          </div>
+          <div class=col-75>
+            <select id=seller>
+              <option selected=selected value=Amazon>Amazon</option>
+              <option value=Flipkart>Flipkart</option>
+              <option value=EBay>EBay</option>
+              <option value=Snapdeal>Snapdeal</option>
+            </select>
+          </div>
+        </div>
+
+        <div class=row>
+          <div class=col-25>
+            <label for=price>Price</label>
+          </div>
+          <div class=col-75>
+            <input type=number id=price name=price placeholder=Price required>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class=buttons>
+      <i class="fas fa-search"></i>
+    <input type=text id=myinput onkeyup=search() placeholder=Search>    
+    <input type=submit onclick=undo() disabled=disabled value="Undo" id=btn-undo>
+    <input type=submit onclick=deleteselected() value="Delete Selected" id=btn-delete>
+    <input type=submit onclick=updateform() disabled=disabled value=Update id=btn-update>
+    <input type=submit onclick=productvalidate() value=Create id=btn-create>
+  </section>
+
+  <div class=container>
+    <table id=ptable>
+      <thead>
+        <tr>
+          <th><input type=checkbox name=check id=checkbox value=checkbox onchange=checkall()></th>
+          <th>ID</th>
+          <th>Product Name</th>
+          <th>Seller</th>
+          <th>Price (Rs)</th>
+          <th>Edit</th>
+          <th>Delete</th>
+          <th>Read</th>
+        </tr>
+      </thead>
+
+      <tbody></tbody>
+    </table>
+
+    <div id=myModal class=modal>
+      <div class=modal-content>
+        <span class=close>&times;</span>
+        <h1>Product Details</h1>
+        <table>
+
+          <tr>
+            <th class=disitem>Product ID</th>
+            <th id=disid></th>
+          </tr>
+
+          <tr>
+            <th class=disitem>Product Name</th>
+            <th id=dispro></th>
+          </tr>
+
+          <tr>
+            <th class=disitem>Seller</th>
+            <th id=dissell></th>
+          </tr>
+
+          <tr>
+            <th class=disitem>Product Price (Rs)</th>
+            <th id=disprice></th>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <section class=bottom>
+    <table id=bottom>
+      <tr class=trow>
+        <th>
+          <select id=pageno onchange=onupdate()>
+            <option selected=selected value=5>5</option>
+            <option value=10>10</option>
+            <option value=15>15</option>
+            <option value=20>20</option>
+          </select>
+        </th>
+
+        <th>
+          <div class=center>
+            <div id=pagination>
+              <input type=button id=pre onClick=page_click(this.id) disabled=disabled value="<">
+              <input type=button id=1 value=1>
+              <input type=button id=next onClick=page_click(this.id) value=">">
+            </div>
+          </div>
+        </th>
+
+        <th>
+         <input type=text name=go id='go' name=go  placeholder="Go To Page">  
+        </th>
+        <th>
+         <input type="button" id="gobutton" value="Go" onClick="gotopage();">
+        </th>
+      </tr>
+    </table>
+
+  </section>
+
+  <script type=text/javascript src=../source/script.js></script>
+  <script type=text/javascript src=../source/pagination.js></script>
+
+</body> 
+
+</html>

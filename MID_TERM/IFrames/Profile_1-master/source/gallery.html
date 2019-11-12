@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Aditya Srinivasan </title>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+
+            
+                <!-- The sidebar -->
+           <div class="navbar">
+                        <a  href="../source/index.html">Home</a> 
+                        <a href="../source/about.html">About Me</a> 
+                        <a href="../source/academics.html">Academics</a> 
+                        <a href="../source/prof.html">Professional Achievements</a>
+                        <a href="../source/extra.html">Extra Curicular</a>
+                        <a class="active" href="../source/gallery.html">Gallery</a>
+        
+                    </div>
+
+
+        </header>
+
+        
+            <!--------------------------------------- Gallery --------------------------------------->
+
+            <section class="section-5">
+                <h1>Gallery</h1>
+
+                <div id="slideshow">
+                    <div>
+                      <img src="../assets/5.jpg" alt="me"  class="responsive">
+                    </div>
+                    <div>
+                      <img src="../assets/7.jpg" alt="me"  class="responsive">
+                    </div>
+                    <div>
+                      <img src="../assets/4.jpg" alt="me"  class="responsive"> 
+                    </div>
+                    <div>
+                        <img src="../assets/2.jpg" alt="me"  class="responsive"> 
+                      </div>
+                 </div>
+                 <script>
+                 $("#slideshow > div:gt(0)").hide();
+
+                  setInterval(function() {
+                  $('#slideshow > div:first')
+                    .fadeOut(1000)
+                        .next()
+                    .fadeIn(1000)
+                .end()
+                  .appendTo('#slideshow');
+                      }, 3000);
+
+                  </script>
+                
+                
+                
+
+        </section>
+
+        
+        <footer>
+            <h1>Contact </h1>
+            <h4>Please feel free to reach out </h4>
+             
+            <div class="contact-form">
+                <form id="contact-form">
+                  <input type="text" name="" class="form-control" placeholder="Your Name" required>
+                  <br>
+                  <input type="email" name="" class="form-control" placeholder="Email ID" required>
+                  <br>
+                  <input type="text" class="form-control" placeholder="Message"  required>
+                  <br>
+    
+                  <input type="submit" 
+                  class="form-control submit" value="Send Message">
+    
+                  </form>
+    
+    
+            </div>
+            
+    
+    
+          </footer>
+ 
+
+        </body>
+        </html>

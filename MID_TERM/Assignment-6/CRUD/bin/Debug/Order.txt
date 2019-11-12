@@ -1,0 +1,38 @@
+
+			 Tasty Lunch Box 
+
+Name             :- User1
+Address          :-  XYZ, Adambakkam, Chennai-88
+Phone            :-  1234567890
+Date and Time    :-  22-08-2019 14:23:02
+
+Bill No:- 1
+
+
+----------------------- Your Lunch Box ---------------------------------
+          SNo	              ProductName        Price     Quantity        Total
+
+         1 	         Sambar Idly               35         3       105
+------------------------------------------------------------------------
+
+      Total Cost :-  105
+Total Amount with discount: 73.5
+
+			 Tasty Lunch Box 
+
+Name             :- User1
+Address          :-  XYZ, Adambakkam, Chennai-88
+Phone            :-  1234567890
+Date and Time    :-  24-09-2019 11:08:33
+
+Bill No:- 1
+
+
+----------------------- Your Lunch Box ---------------------------------
+          SNo	              ProductName        Price     Quantity        Total
+
+         1 	         Sambar Idly               35        14       490
+------------------------------------------------------------------------
+
+      Total Cost :-  490
+Total Amount with discount: 343
